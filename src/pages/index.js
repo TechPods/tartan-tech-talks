@@ -1,5 +1,5 @@
 import React from "react";
-import Layout from "../components/Layout2";
+import Layout from "../components/Layout";
 import Logo from "../images/tartan-logo.svg";
 import styled from "styled-components";
 
