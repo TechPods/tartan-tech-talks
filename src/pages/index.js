@@ -1,19 +1,22 @@
 import React from "react";
-import Layout from "../components/layout";
+import Layout from "../components/Layout";
 import Logo from "../images/tartan-logo.svg";
 import styled from "styled-components";
+
+import About from "../components/About";
+import Events from "../components/Events";
 
 const HomeHero = styled.div`
   text-align: center;
   position: relative;
   height: 100vh;
   svg {
-    margin: 100px 0;
+    margin: 23% 0 100px 0;
     max-width: 100%;
   }
   h2 {
     position: absolute;
-    bottom: 0;
+    top: 5px;
     left: 0;
     right: 0;
     color: #a40105;
@@ -22,11 +25,13 @@ const HomeHero = styled.div`
 
 const IndexPage = () => (
   <Layout>
-    <HomeHero>
+    <HomeHero id="home">
+      <h2>Coming soon...</h2>
       <Logo />
       <h1>Tartan Tech Talks : Where tech leaders talk tech</h1>
-      <h2>Coming soon...</h2>
     </HomeHero>
+    {/* <About />
+    <Events /> */}
   </Layout>
 );
 
