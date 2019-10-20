@@ -3,6 +3,8 @@ import Layout from "../components/Layout";
 import Logo from "../images/tartan-logo.svg";
 import styled from "styled-components";
 
+import About from "../components/About";
+
 const HomeHero = styled.div`
   text-align: center;
   position: relative;
@@ -27,6 +29,7 @@ const IndexPage = () => (
       <Logo />
       <h1>Tartan Tech Talks : Where tech leaders talk tech</h1>
     </HomeHero>
+    <About />
   </Layout>
 );
 

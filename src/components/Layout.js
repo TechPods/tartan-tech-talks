@@ -1,11 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
 import GlobalStyle from "../helpers/styles/globalStyles";
+import Navigation from "../components/Navigation";
 
 const Layout = ({ children }) => {
   return (
     <>
       <GlobalStyle />
+      <Navigation />
       <div
         style={{
           margin: `0 auto`,

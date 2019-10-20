@@ -38,7 +38,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`Anonymous Pro:400,500,700`]
+        fonts: [`Anonymous Pro:400,500,700`, `Roboto+Mono:300,400,500,700`]
       }
     }
   ]
