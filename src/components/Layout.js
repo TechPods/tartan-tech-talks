@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import CookieConsent from "react-cookie-consent";
 import GlobalStyle from "../helpers/styles/globalStyles";
 import Navigation from "../components/Navigation";
 
@@ -16,6 +17,9 @@ const Layout = ({ children }) => {
           paddingTop: 0
         }}>
         <main>{children}</main>
+        <CookieConsent>
+          This website uses cookies to enhance the user experience.
+        </CookieConsent>
       </div>
     </>
   );

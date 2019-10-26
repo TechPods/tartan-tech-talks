@@ -4,6 +4,7 @@ import Logo from "../images/tartan-logo.svg";
 import styled from "styled-components";
 
 import About from "../components/About";
+import Events from "../components/Events";
 
 const HomeHero = styled.div`
   text-align: center;
@@ -13,23 +14,16 @@ const HomeHero = styled.div`
     margin: 23% 0 100px 0;
     max-width: 100%;
   }
-  h2 {
-    position: absolute;
-    top: 5px;
-    left: 0;
-    right: 0;
-    color: #a40105;
-  }
 `;
 
 const IndexPage = () => (
   <Layout>
     <HomeHero id="home">
-      <h2>Coming soon...</h2>
       <Logo />
       <h1>Tartan Tech Talks : Where tech leaders talk tech</h1>
     </HomeHero>
     <About />
+    <Events />
   </Layout>
 );
 

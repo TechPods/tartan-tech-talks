@@ -18,6 +18,7 @@ export default {
   maxMobile: `(max-width: ${size.mobileM})`,
   maxMobileXL: `screen and (min-width : ${size.tablet}) and (max-width : ${size.mobileXL})`,
   tablet: `(min-width: ${size.tablet})`,
+  maxTablet: `(max-width: ${size.tablet})`,
   laptop: `(min-width: ${size.laptop})`,
   maxLaptop: `(max-width: ${size.laptop})`,
   laptopL: `(min-width: ${size.laptopL})`,

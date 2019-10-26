@@ -1,10 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import LogoTartan from "../images/tartan.svg";
 
 import breakpoints from "../helpers/styles/breakpoints";
 
-const AboutContainer = styled.div`
+const EventsContainer = styled.div`
   display: block;
   position: relative;
   padding: 25px;
@@ -13,28 +12,20 @@ const AboutContainer = styled.div`
     margin: auto;
   }
 `;
-const AboutTitle = styled.h1`
+const EventsTitle = styled.h1`
   @media ${breakpoints.mobileX} {
     transform: rotate(90deg);
     transform-origin: left top 0;
     position: relative;
   }
-
-  svg {
-    max-width: 250px;
-    max-height: 55px;
-    display: inline-block;
-    vertical-align: bottom;
-    position: relative;
-    top: 4px;
-  }
 `;
-const AboutContent = styled.div`
+const EventsContent = styled.div`
   border-left: 15px solid #105327;
   padding: 20px;
   line-height: 2.6;
   font-size: 16px;
   margin-top: 30px;
+  height: calc(100vh - 200px);
   @media ${breakpoints.mobileX} {
     height: calc(100vh - 200px);
     line-height: 2.6;
@@ -61,24 +52,17 @@ const AboutContent = styled.div`
   }
 `;
 
-const About = () => {
+const Events = () => {
   return (
-    <AboutContainer>
-      <AboutTitle id="about">
-        About <LogoTartan /> Tech Talks
-      </AboutTitle>
-      <AboutContent>
+    <EventsContainer>
+      <EventsTitle id="events">Events</EventsTitle>
+      <EventsContent>
         <p>
-          Tartan Tech Talks is a regular technology event held in{" "}
-          <mark>Scotland</mark>, where tech leaders gather to share battle-field
-          stories, industry knowledge, technology trends and best practices.
-          Brought to you by the organisers of the popular{" "}
-          CTO round table events in London, <mark>Tartan Tech Talks</mark>
-          shifts the spotlight to Scotland's vibrant tech scene.
+          Coming <mark>soon...</mark>
         </p>
-      </AboutContent>
-    </AboutContainer>
+      </EventsContent>
+    </EventsContainer>
   );
 };
 
-export default About;
+export default Events;
