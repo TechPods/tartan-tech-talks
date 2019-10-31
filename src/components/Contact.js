@@ -83,6 +83,10 @@ export default class ContactPage extends Component {
                 role: this.state.role,
                 email: this.state.email
             },
+            headers:{
+                'Content-Type': 'application/json;charset=UTF-8',
+                accept: 'application/json',
+            },
         })
             .then( res => {
                 this.setState({ sent: true }, this.resetForm())
