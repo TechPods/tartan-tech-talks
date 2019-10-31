@@ -55,13 +55,17 @@ export default class ContactPage extends Component {
             buttonText: '...sending'
         })
 
-        let data = {
-            name: this.state.name,
-            email: this.state.email,
-            message: this.state.message
-        }
+        let data = new FormData()
 
-        axios.post('https://tartanbackend.stameno.now.sh/api/v1', data)
+        data.set('name', this.state.name)
+        data.set('email', this.state.email)
+        data.set('message', this.state.message)
+
+        axios({
+            method: 'post',
+            url: 'https://tartanbackend.stameno.now.sh/api/v1',
+            data,
+        })
             .then( res => {
                 this.setState({ sent: true }, this.resetForm())
             })
