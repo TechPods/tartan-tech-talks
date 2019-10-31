@@ -5,6 +5,7 @@ import styled from "styled-components";
 
 import About from "../components/About";
 import Events from "../components/Events";
+import ContactPage from '../components/Contact';
 
 const HomeHero = styled.div`
   text-align: center;
@@ -24,6 +25,7 @@ const IndexPage = () => (
     </HomeHero>
     <About />
     <Events />
+    <ContactPage />
   </Layout>
 );
 
