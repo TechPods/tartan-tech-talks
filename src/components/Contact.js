@@ -142,7 +142,7 @@ export default class ContactPage extends Component {
 
         axios({
             method: 'post',
-            url: 'http://localhost:4444/api/v1',
+            url: 'https://tartanbackend.stameno.now.sh/api/v1',
             data,
         })
             .then( res => {
