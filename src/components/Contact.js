@@ -34,7 +34,7 @@ const ContactTitle = styled.h1`
 const FormLabel = styled.label`
   display: block;
   width: 100%;
-  margin-bottom: 10px;
+  line-height: 1.5;
   margin-top: 10px;
 `;
 
@@ -75,6 +75,9 @@ const ContactContent = styled.div`
     height: calc(100vh - 200px);
     line-height: 2.6;
   }
+  h3 {
+    margin: 0;
+  }
 `;
 
 const SwitchButton = styled.button`
@@ -92,10 +95,9 @@ const SwitchButton = styled.button`
 
 const SwitchContainer = styled.div`
   border: 1px solid #105327;
-  display: inline-block;
+  display: inline-flex;
   margin: 0 auto;
   margin-bottom: 20px;
-  margin-top: 10px;
 `;
 
 export default class ContactPage extends Component {
