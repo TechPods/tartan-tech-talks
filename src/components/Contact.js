@@ -157,7 +157,7 @@ export default class ContactPage extends Component {
         return(
             <ContactContainer>
                 <ContactTitle id="contact">
-                    Contact
+                    Register
                 </ContactTitle>
                 <ContactContent>
                     <h3 style={{textAlign: 'center'}}>I'm interested in attending as:</h3>

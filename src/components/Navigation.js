@@ -177,6 +177,7 @@ const Navigation = props => {
           <AnchorLink offset="50" href="#events">
             Events TTT
           </AnchorLink>
+          <AnchorLink offset="50" href="#contact">Register</AnchorLink>
         </NavigationContainerWrapper>
       </NavigationContainer>
     </>
