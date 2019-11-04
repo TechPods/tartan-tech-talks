@@ -198,6 +198,7 @@ export default class ContactPage extends Component {
               className="message-name"
               type="text"
               placeholder="First Name"
+              required
               value={this.state.firstName}
             />
             <FormLabel htmlFor="message-name">Last Name</FormLabel>
@@ -207,6 +208,7 @@ export default class ContactPage extends Component {
               className="message-name"
               type="text"
               placeholder="Last Name"
+              required
               value={this.state.lastName}
             />
             <FormLabel htmlFor="message-name">Company</FormLabel>
@@ -216,6 +218,7 @@ export default class ContactPage extends Component {
               className="message-name"
               type="text"
               placeholder="Company"
+              required
               value={this.state.company}
             />
             <FormLabel htmlFor="message-name">Role</FormLabel>
@@ -225,6 +228,7 @@ export default class ContactPage extends Component {
               className="message-name"
               type="text"
               placeholder="Role"
+              required
               value={this.state.role}
             />
             <FormLabel htmlFor="message-email">Email</FormLabel>
