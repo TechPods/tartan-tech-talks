@@ -75,6 +75,15 @@ const ContactContent = styled.div`
    text-align: center;
 `;
 
+const CheckboxContainer = styled.div`
+   margin-top: 10px
+`;
+
+const CheckboxLabel = styled.label`
+   font-size: 11px;
+   color: #808080;
+`;
+
 const SwitchButton = styled.button`
   outline: 0;
   border: 1px;
@@ -177,22 +186,59 @@ export default class ContactPage extends Component {
                     </SwitchContainer>
                     <FormComponent onSubmit={(e) => this.formSubmit(e)}>
                         <FormLabel htmlFor="message-name">First Name</FormLabel>
-                        <TextInput onChange={e => this.setState({firstName: e.target.value})} name="firstName" className="message-name"
-                               type="text" placeholder="First Name" value={this.state.firstName}/>
+                        <TextInput
+                            onChange={e => this.setState({firstName: e.target.value})}
+                            name="firstName"
+                            className="message-name"
+                            type="text"
+                            placeholder="First Name"
+                            value={this.state.firstName}
+                            required
+                        />
                         <FormLabel htmlFor="message-name">Last Name</FormLabel>
-                        <TextInput onChange={e => this.setState({lastName: e.target.value})} name="lastName" className="message-name"
-                               type="text" placeholder="Last Name" value={this.state.lastName}/>
+                        <TextInput
+                            onChange={e => this.setState({lastName: e.target.value})}
+                            name="lastName"
+                            className="message-name"
+                            type="text"
+                            placeholder="Last Name"
+                            value={this.state.lastName}
+                            required
+                        />
                         <FormLabel htmlFor="message-name">Company</FormLabel>
-                        <TextInput onChange={e => this.setState({company: e.target.value})} name="company" className="message-name"
-                               type="text" placeholder="Company" value={this.state.company}/>
+                        <TextInput
+                            onChange={e => this.setState({company: e.target.value})}
+                            name="company"
+                            className="message-name"
+                            type="text"
+                            placeholder="Company"
+                            value={this.state.company}
+                            required
+                        />
                         <FormLabel htmlFor="message-name">Role</FormLabel>
-                        <TextInput onChange={e => this.setState({role: e.target.value})} name="role" className="message-name"
-                               type="text" placeholder="Role" value={this.state.role}/>
+                        <TextInput
+                            onChange={e => this.setState({role: e.target.value})}
+                            name="role"
+                            className="message-name"
+                            type="text"
+                            placeholder="Role"
+                            value={this.state.role}
+                            required
+                        />
                         <FormLabel htmlFor="message-email">Email</FormLabel>
-                        <TextInput onChange={(e) => this.setState({email: e.target.value})} name="email"
-                               className="message-email" type="email" placeholder="your@email.com" required
-                               value={this.state.email}/>
-
+                        <TextInput
+                            onChange={(e) => this.setState({email: e.target.value})}
+                            name="email"
+                            className="message-email"
+                            type="email"
+                            placeholder="your@email.com"
+                            required
+                            value={this.state.email}
+                        />
+                        <CheckboxContainer>
+                            <input id="remember" type="checkbox" required/>
+                            <CheckboxLabel htmlFor="remember">I have read and understand the privacy policy and terms and conditions</CheckboxLabel>
+                        </CheckboxContainer>
                         <ButtonContainer>
                             <SubmitButton type="submit" className="button button-primary">{this.state.buttonText}</SubmitButton>
                         </ButtonContainer>
