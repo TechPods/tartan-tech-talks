@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import axios from "axios";
 import breakpoints from "../helpers/styles/breakpoints";
+import {Link} from 'gatsby';
 
 const ContactContainer = styled.div`
   margin-top: 30px;
@@ -78,6 +79,17 @@ const ContactContent = styled.div`
   h3 {
     margin: 0;
   }
+`;
+
+const CheckboxContainer = styled.div`
+   margin-top: 10px;
+   line-height: 17px;
+`;
+
+const CheckboxLabel = styled.label`
+   font-size: 11px;
+   color: #808080;
+   
 `;
 
 const SwitchButton = styled.button`
@@ -225,7 +237,10 @@ export default class ContactPage extends Component {
               required
               value={this.state.email}
             />
-
+            <CheckboxContainer>
+              <input id="remember" type="checkbox" required/>
+              <CheckboxLabel htmlFor="remember">I have read and understand the <Link to="/privacy-policy">privacy policy</Link></CheckboxLabel>
+            </CheckboxContainer>
             <ButtonContainer>
               <SubmitButton type="submit" className="button button-primary">
                 {this.state.buttonText}
