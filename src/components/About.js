@@ -69,8 +69,8 @@ const About = () => {
       </AboutTitle>
       <AboutContent>
         <p>
-          Tartan Tech Talks is a regular technology event held in{" "}
-          <mark>Scotland</mark>, where tech leaders gather to share battle-field
+          Tartan Tech Talks is a technology event held in{" "}
+          <mark>Scotland</mark>, enabling tech leaders to gather and share battle-field
           stories, industry knowledge, technology trends and best practices.
           Brought to you by the organisers of the popular{" "}
           CTO round table events in London, <mark>Tartan Tech Talks</mark>
