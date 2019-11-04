@@ -6,6 +6,9 @@
   "author": "Techpods team",
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.6",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
     "gatsby": "^2.15.29",
     "gatsby-image": "^2.2.24",
     "gatsby-plugin-google-fonts": "^1.0.1",
@@ -16,8 +19,11 @@
     "gatsby-plugin-sharp": "^2.2.28",
     "gatsby-source-filesystem": "^2.1.29",
     "gatsby-transformer-sharp": "^2.2.20",
+    "nodemailer": "^6.3.1",
     "prop-types": "^15.7.2",
     "react": "^16.10.2",
+    "react-anchor-link-smooth-scroll": "^1.0.12",
+    "react-cookie-consent": "^2.5.0",
     "react-dom": "^16.10.2",
     "react-helmet": "^5.2.1",
     "styled-components": "^4.3.2"
